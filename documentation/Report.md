@@ -33,10 +33,10 @@
 | Всего               |      50       |   40   |   10   |    80,00% |
 
 ### Отчет Allure:
-![MySQL report](\pic\MySQL report.jpg)
+![MySQL report](https://github.com/Andrey-Shelikhanov/Diploma.QA.Engineer/blob/main/documentation/pic/MySQL%20report.jpg)
 
 
-![PostgreSQL report](\pic\PostgreSQL report.jpg)
+![PostgreSQL report](https://github.com/Andrey-Shelikhanov/Diploma.QA.Engineer/blob/main/documentation/pic/PostgreSQL%20report.jpg)
 
 #### Рекомендации:
 1. Составить документацию для приложения.
