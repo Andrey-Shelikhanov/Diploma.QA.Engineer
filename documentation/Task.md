@@ -32,7 +32,7 @@
 1. Обычная оплата по дебетовой карте.
 2. Уникальная технология: выдача кредита по данным банковской карты.
 
-![](\pic\service.png)
+![](https://github.com/Andrey-Shelikhanov/Diploma.QA.Engineer/blob/main/documentation/pic/service.png)
 
 Само приложение не обрабатывает данные по картам, а пересылает их банковским сервисам:
 * сервису платежей, далее Payment Gate;
