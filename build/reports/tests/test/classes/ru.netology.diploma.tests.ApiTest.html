@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.netology.diploma.tests.html">ru.netology.diploma.tests</a> &gt; ApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.686s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Сценарий 3. API. Отправка POST запроса купить в кредит с валидным body и карты со статусом APPROVED Ожидаемый результат: ответ сервера - код 200, запись в БД со статус карты APPROVED</td>
+<td class="success">shouldGiveValidApprovedCreditCard()</td>
+<td class="success">2.459s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Сценарий 1. API. Отправка POST запроса купить с валидным body и карты со статусом APPROVED Ожидаемый результат: ответ сервера - код 200, запись в БД со статус карты APPROVED</td>
+<td class="success">shouldGiveValidApprovedDebitCard()</td>
+<td class="success">0.074s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Сценарий 4. API. Оправка POST запроса купить в кредит с валидным body и карты со статусом DECLINED Ожидаемый результат: ответ сервера - код 200, запись в БД со статусом карты DECLINED</td>
+<td class="success">shouldGiveValidDeclinedCreditCard()</td>
+<td class="success">0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Сценарий 2. API. Отправка POST запроса купить с валидным body и карты со статусом DECLINED Ожидаемый результат: ответ сервера - код 200, запись в БД со статусом карты DECLINED</td>
+<td class="success">shouldGiveValidDeclinedDebitCard()</td>
+<td class="success">0.083s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	http://localhost:8080/api/v1/credit
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4441&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;23&quot;,
+    &quot;holder&quot;: &quot;Eugene Satterfield&quot;,
+    &quot;cvc&quot;: &quot;566&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/pay
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4442&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;23&quot;,
+    &quot;holder&quot;: &quot;Isaias Carroll&quot;,
+    &quot;cvc&quot;: &quot;802&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/credit
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4442&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;23&quot;,
+    &quot;holder&quot;: &quot;Suzanne Waters&quot;,
+    &quot;cvc&quot;: &quot;033&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/pay
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4441&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;23&quot;,
+    &quot;holder&quot;: &quot;Shawnee McGlynn&quot;,
+    &quot;cvc&quot;: &quot;640&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 19 авг. 2023 г., 18:25:17</p>
+</div>
+</div>
+</body>
+</html>

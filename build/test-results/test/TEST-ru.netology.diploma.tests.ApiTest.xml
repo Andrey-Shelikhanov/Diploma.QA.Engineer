@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.netology.diploma.tests.ApiTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-08-19T15:22:26" hostname="PAWS_LEGION" time="2.691">
+  <properties/>
+  <testcase name="Сценарий 3. API. Отправка POST запроса купить в кредит с валидным body и карты со статусом APPROVED Ожидаемый результат: ответ сервера - код 200, запись в БД со статус карты APPROVED" classname="ru.netology.diploma.tests.ApiTest" time="2.459"/>
+  <testcase name="Сценарий 2. API. Отправка POST запроса купить с валидным body и карты со статусом DECLINED Ожидаемый результат: ответ сервера - код 200, запись в БД со статусом карты DECLINED" classname="ru.netology.diploma.tests.ApiTest" time="0.083"/>
+  <testcase name="Сценарий 4. API. Оправка POST запроса купить в кредит с валидным body и карты со статусом DECLINED Ожидаемый результат: ответ сервера - код 200, запись в БД со статусом карты DECLINED" classname="ru.netology.diploma.tests.ApiTest" time="0.07"/>
+  <testcase name="Сценарий 1. API. Отправка POST запроса купить с валидным body и карты со статусом APPROVED Ожидаемый результат: ответ сервера - код 200, запись в БД со статус карты APPROVED" classname="ru.netology.diploma.tests.ApiTest" time="0.074"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/api/v1/credit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "number": "4444 4444 4444 4441",
+    "month": "08",
+    "year": "23",
+    "holder": "Eugene Satterfield",
+    "cvc": "566"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/pay
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "number": "4444 4444 4444 4442",
+    "month": "08",
+    "year": "23",
+    "holder": "Isaias Carroll",
+    "cvc": "802"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/credit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "number": "4444 4444 4444 4442",
+    "month": "08",
+    "year": "23",
+    "holder": "Suzanne Waters",
+    "cvc": "033"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/pay
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "number": "4444 4444 4444 4441",
+    "month": "08",
+    "year": "23",
+    "holder": "Shawnee McGlynn",
+    "cvc": "640"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

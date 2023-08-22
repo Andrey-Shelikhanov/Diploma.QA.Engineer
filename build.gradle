@@ -1,10 +1,9 @@
 plugins {
     id 'java'
-    id 'io.freefair.lombok' version '5.3.0'
     id 'io.qameta.allure' version '2.11.2'
 }
 
-group 'ru.netology'
+group 'ru.netology.diploma'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
@@ -12,10 +11,10 @@ compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
 allure {
-    version = '2.20.1'
+    version = '2.21.0'
 
     useJUnit5 {
-        version = '2.20.1'
+        version = '2.21.0'
     }
 }
 
@@ -24,17 +23,20 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
-    testImplementation 'junit:junit:4.13.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
-    testImplementation 'io.rest-assured:rest-assured:4.2.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testImplementation 'junit:junit:4.13.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
     testImplementation 'com.codeborne:selenide:6.13.0'
-    testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.21.0'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation 'mysql:mysql-connector-java:8.0.29'
-    testImplementation 'org.postgresql:postgresql:42.2.14'
+    testImplementation 'mysql:mysql-connector-java:8.0.33'
+    testImplementation 'org.postgresql:postgresql:42.5.4'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
-    testImplementation 'com.google.code.gson:gson:2.8.6'
+    testImplementation 'com.google.code.gson:gson:2.10.1'
+    testCompileOnly 'org.projectlombok:lombok:1.18.26'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.5'
 }
 
 test {
