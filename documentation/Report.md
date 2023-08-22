@@ -33,10 +33,10 @@
 | Всего               |      50       |   40   |   10   |    80,00% |
 
 ### Отчет Allure:
-![MySQL report](MySQL report.jpg)
+![MySQL report](documentation/pic/MySQL report.jpg)
 
 
-![PostgreSQL report](PostgreSQL report.jpg)
+![PostgreSQL report](documentation/pic/PostgreSQL report.jpg)
 
 #### Рекомендации:
 1. Составить документацию для приложения.
